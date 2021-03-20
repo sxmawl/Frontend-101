@@ -12,38 +12,9 @@ body{
 }
 
 
-span:nth-child(6n+1), span:nth-child(6n+2),span:nth-child(6n+3) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 800;
-    height: 28vh;
-    margin: 15px 5px;
-    background-color: white;
-    width: 23vw;
-    animation: moveRight1 1.5s ease-in-out infinite alternate;
-}
-span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 800;
-    height: 28vh;
-    margin: 15px 5px;
-    background-color: white;
-    width: 23vw;
-    animation: moveLeft1 1.5s ease-in-out infinite alternate;
-}
-span:nth-child(6n+3){
-    margin-right: 25vw;
-} 
-span:nth-child(6n+4){
-   margin-left: 25vw;
-}
+
+/* ANIMATIONS */
+
 @keyframes moveRight1 {
     from{
         transform: translateX(0);
@@ -62,4 +33,201 @@ span:nth-child(6n+4){
         transform: translateX(-25vw);
     }
 
+}
+
+
+
+
+@keyframes moveRight2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(33vw);
+    }
+
+}
+
+@keyframes moveLeft2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-33vw);
+    }
+
+}
+
+
+
+
+
+@keyframes moveRight3 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(50vw);
+    }
+
+}
+
+
+@keyframes moveLeft3 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50vw);
+    }
+
+}
+
+
+/* MEDIA QUERIES */
+
+
+
+@media only screen and (min-width:1312px){
+
+    span:nth-child(6n+1), span:nth-child(6n+2),span:nth-child(6n+3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 23vw;
+        animation: moveRight1 1.5s ease-in-out infinite alternate;
+    }
+    span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 23vw;
+        animation: moveLeft1 1.5s ease-in-out infinite alternate;
+    }
+    span:nth-child(6n+3){
+        margin-right: 25vw;
+    } 
+    span:nth-child(6n+4){
+       margin-left: 25vw;
+    }
+
+}
+
+@media only screen and (max-width:1312px) and (min-width:992px){
+
+    .container{
+        justify-content: space-around;
+    }
+
+    span:nth-child(4n+1), span:nth-child(4n+2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 30vw;
+        animation: moveRight2 1.5s ease-in-out infinite alternate;
+    }
+    span:nth-child(4n+3), span:nth-child(4n) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 30vw;
+        animation: moveLeft2 1.5s ease-in-out infinite alternate;
+    }
+
+    span:nth-child(4n+2){
+        margin-right: 33.33vw;
+    } 
+    span:nth-child(4n+3){
+       margin-left: 33.33vw;
+    }
+    
+}
+
+
+@media only screen and (min-width:600px) and (max-width:992px){
+
+    .container{
+        justify-content: space-around;
+    }
+
+    span:nth-child(2n+1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 48vw;
+        animation: moveRight3 1.5s ease-in-out infinite alternate;
+    }
+    span:nth-child(2n) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 48vw;
+        animation: moveLeft3 1.5s ease-in-out infinite alternate;
+    }
+
+    span:nth-child(2n+1){
+        margin-right: 50vw;
+    } 
+    span:nth-child(2n){
+       margin-left: 50vw;
+    }
+    
+}
+
+
+@media only screen and (max-width:600px){
+
+    .container{
+        justify-content: space-around;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        height: 28vh;
+        margin: 15px 5px;
+        background-color: white;
+        width: 95vw;
+    }
+    
 }
