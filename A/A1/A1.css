@@ -8,6 +8,7 @@ body{
 
 }
 
+
 span:nth-child(6n+1), span:nth-child(6n+2),span:nth-child(6n+3) {
     display: flex;
     justify-content: center;
@@ -18,7 +19,7 @@ span:nth-child(6n+1), span:nth-child(6n+2),span:nth-child(6n+3) {
     height: 28vh;
     margin: 15px 5px;
     background-color: white;
-    width: 25vw;
+    width: 24vw;
     animation: moveRight1 1.5s ease-in-out infinite alternate;
 }
 span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
@@ -31,10 +32,15 @@ span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
     height: 28vh;
     margin: 15px 5px;
     background-color: white;
-    width: 25vw;
+    width: 24vw;
     animation: moveLeft1 1.5s ease-in-out infinite alternate;
 }
-
+span:nth-child(6n+3){
+    margin-right: 25vw;
+} 
+span:nth-child(6n+4){
+   margin-left: 25vw;
+}
 @keyframes moveRight1 {
     from{
         transform: translateX(0);
@@ -50,13 +56,13 @@ span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
 
 @keyframes moveLeft1 {
     from{
-        transform: translateX(25vw);
+        transform: translateX(0);
     }
     /* 50%{
         transform: translateX(20vw);
     } */
     to{
-        transform: translateX(0vw);
+        transform: translateX(-25vw);
     }
 
 }
