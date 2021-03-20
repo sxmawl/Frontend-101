@@ -18,7 +18,7 @@ span:nth-child(6n+1), span:nth-child(6n+2),span:nth-child(6n+3) {
     height: 28vh;
     margin: 15px 5px;
     background-color: white;
-    width: 24vw;
+    width: 25vw;
     animation: moveRight1 1.5s ease-in-out infinite alternate;
 }
 span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
@@ -31,7 +31,7 @@ span:nth-child(6n), span:nth-child(6n+4),span:nth-child(6n+5) {
     height: 28vh;
     margin: 15px 5px;
     background-color: white;
-    width: 24vw;
+    width: 25vw;
     animation: moveLeft1 1.5s ease-in-out infinite alternate;
 }
 
