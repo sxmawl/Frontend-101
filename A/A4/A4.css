@@ -1,0 +1,30 @@
+body{
+    display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+
+div{
+    position: relative;
+    border-radius: 23px; 
+    border: 2px solid black;
+    width: 16.5vw;
+    left: 2px;
+    top: 8px;
+    height: 66vh;
+     background: radial-gradient(circle at -2% -2%, rgb(248, 28, 28) ,rgba(250, 60, 60, 0.9) 7%, transparent 15%),
+     radial-gradient(circle at 0% 20%, rgb(247, 6, 174) ,rgba(252, 13, 180, 0.9) 7%,rgba(231, 37, 118, 0.5) 30%, transparent 50%), 
+     radial-gradient(circle at 120% 10%,rgb(23, 55, 238,0.9),rgba(43, 91, 247,0.85) 22%,transparent 60%),
+     radial-gradient(circle at 0% 45%, rgb(247, 67, 13,1)10%,rgba(250, 86, 37, 0.6)30%,transparent 60%),
+     radial-gradient(circle at 80% 98%, rgb(247, 67, 13) ,rgba(250, 86, 37, 0.6)10%,transparent 35%),
+     linear-gradient(89deg, rgba(0,0,255,.6) , rgba(0,0,255,0) 4%),
+     radial-gradient(circle at 102% 102%, rgb(248, 28, 28) ,rgba(250, 60, 60, 0.9) 7%, transparent 15%),
+     radial-gradient(circle at 135% 85%,rgb(23, 55, 238,0.9),rgba(43, 91, 247) 10%,transparent 20%),
+     radial-gradient(circle at 5% 100%,rgb(255 233 164 / 75%)5%,rgb(247 229 181)10%,transparent 70%);
+}
+img{
+    position: absolute;
+    z-index: -1;
+}
