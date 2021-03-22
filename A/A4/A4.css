@@ -3,18 +3,72 @@ body{
 justify-content: center;
 align-items: center;
 min-height: 100vh;
+background-color: linen;
 
 }
 
-div{
+.iphone{
+    
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-radius: 30px;
+    background-color: rgb(235, 235, 235);
+    box-shadow:
+    0 1.1px 5.8px rgba(0, 0, 0, 0.182),
+    0 3.8px 19.4px rgba(0, 0, 0, 0.268),
+    0 17px 87px rgba(0, 0, 0, 0.45);
+    border: 4px solid black;
+    /* outline: 5px solid grey; */
+
+}
+
+.iphone:focus {
+    box-shadow: 0 0 3pt 2pt red;
+}
+
+.iphone::after{
+  content: '';
+  background: rgb(17, 17, 17);
+  height: 20px;
+  width: 130px;
+  position: absolute;
+  top: 20.2%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.mic{
+   width: 44px;
+   height: 4px;
+   position: absolute;
+   top: 21%;
+   z-index: 2;
+   background-color: rgb(51, 50, 50);
+   border-radius: 5px;
+}
+
+.camera{
+    position: absolute;
+    top: 21%;
+    z-index: 2;
+    left: 52.3%;
+    background-color: rgb(37, 71, 110);
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+}
+
+.mockup{
+
     position: relative;
     border-radius: 23px; 
-    border: 2px solid black;
-    width: 16.5vw;
-    left: 2px;
-    top: 8px;
-    height: 66vh;
-     background: radial-gradient(circle at -2% -2%, rgb(248, 28, 28) ,rgba(250, 60, 60, 0.9) 7%, transparent 15%),
+    width: 240px;
+    height: 490px;
+    background: radial-gradient(circle at -2% -2%, rgb(248, 28, 28) ,rgba(250, 60, 60, 0.9) 7%, transparent 15%),
      radial-gradient(circle at 0% 20%, rgb(247, 6, 174) ,rgba(252, 13, 180, 0.9) 7%,rgba(231, 37, 118, 0.5) 30%, transparent 50%), 
      radial-gradient(circle at 120% 10%,rgb(23, 55, 238,0.9),rgba(43, 91, 247,0.85) 22%,transparent 60%),
      radial-gradient(circle at 0% 45%, rgb(247, 67, 13,1)10%,rgba(250, 86, 37, 0.6)30%,transparent 60%),
@@ -23,6 +77,19 @@ div{
      radial-gradient(circle at 102% 102%, rgb(248, 28, 28) ,rgba(250, 60, 60, 0.9) 7%, transparent 15%),
      radial-gradient(circle at 135% 85%,rgb(23, 55, 238,0.9),rgba(43, 91, 247) 10%,transparent 20%),
      radial-gradient(circle at 5% 100%,rgb(255 233 164 / 75%)5%,rgb(247 229 181)10%,transparent 70%);
+     
+    box-shadow:
+  0 0px 0.6px rgba(0, 0, 0, 0.31),
+  0 0px 1.6px rgba(0, 0, 0, 0.444),
+  0 0px 3.2px rgba(0, 0, 0, 0.556),
+  0 0px 6.6px rgba(0, 0, 0, 0.69),
+  0 0px 18px rgba(0, 0, 0, 1);
+
+   
+
+}
+.notch{
+    z-index: 2;
 }
 img{
     position: absolute;
