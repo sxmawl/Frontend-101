@@ -4,7 +4,7 @@ justify-content: center;
 align-items: center;
 min-height: 100vh;
 background-color: linen;
-
+overflow-y: hidden;
 }
 
 .iphone{
@@ -14,6 +14,7 @@ background-color: linen;
     justify-content: center;
     align-items: center;
     height: 500px;
+    position: relative;
     border-radius: 30px;
     background-color: rgb(235, 235, 235);
     box-shadow:
@@ -35,7 +36,7 @@ background-color: linen;
   height: 20px;
   width: 130px;
   position: absolute;
-  top: 20.2%;
+  top: 1%;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 
@@ -45,7 +46,7 @@ background-color: linen;
    width: 44px;
    height: 4px;
    position: absolute;
-   top: 21%;
+   top: 2%;
    z-index: 2;
    background-color: rgb(51, 50, 50);
    border-radius: 5px;
@@ -53,9 +54,9 @@ background-color: linen;
 
 .camera{
     position: absolute;
-    top: 21%;
+    top: 2%;
     z-index: 2;
-    left: 52.3%;
+    left: 62%;
     background-color: rgb(37, 71, 110);
     width: 4px;
     height: 4px;
