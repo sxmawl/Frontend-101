@@ -1,6 +1,7 @@
 body{
     background-color: black;
     text-align: center;
+    overflow-y: hidden;
 }
 
 svg{
