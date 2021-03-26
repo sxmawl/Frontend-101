@@ -1,8 +1,11 @@
 body{
     background-color: black;
+    text-align: center;
 }
 
-
+svg{
+    height: 100vh;
+}
 .outline-0{
  stroke: #ffffff;
  stroke-width: 4px;
