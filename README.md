@@ -7,3 +7,5 @@
      - Hover animation using transform and sibling operators  
   - [A4: The X factor](https://sakshamdevelops.github.io/Frontend-101/A/A4/A4.html)  
      - iPhone X screen using circular gradients.
+  - [A5: DVM Logo Reveal](https://sakshamdevelops.github.io/Frontend-101/A/A5/A5.html)  
+     - Subtly Painting DVM logo on a digital canvas
