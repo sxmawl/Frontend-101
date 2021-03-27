@@ -18,4 +18,4 @@
   - [B2]
     - File management system
   - [B3: To-Do List](https://sakshamdevelops.github.io/Frontend-101/B/B3/B3.html)
-   - Storing user data in `local storage` of to-do list
+    - Storing user data in `local storage` of to-do list
