@@ -11,7 +11,7 @@
      - Subtly Painting DVM logo on a digital canvas
 
 2. B (JS)
-  -[B1:(Canvas API)](https://sakshamdevelops.github.io/Frontend-101/B/B1%20Canvas/B1C.html) 
+  - [B1:(Canvas API)](https://sakshamdevelops.github.io/Frontend-101/B/B1%20Canvas/B1C.html) 
     - Making clock with Canvas API
-  -[B1:(HTML,CSS,JS)](https://sakshamdevelops.github.io/Frontend-101/B/B1%JS/B1.html)
+  - [B1:(HTML,CSS,JS)](https://sakshamdevelops.github.io/Frontend-101/B/B1%JS/B1.html)
     - Basic Clock 
