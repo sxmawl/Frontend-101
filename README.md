@@ -11,11 +11,16 @@
      - Subtly Painting DVM logo on a digital canvas
 
 2. B (JS)
-  -[B1 (Canvas API)](https://sakshamdevelops.github.io/Frontend-101/B/B1%20Canvas/B1C.html) 
+  - [B1:(Canvas API)](https://sakshamdevelops.github.io/Frontend-101/B/B1%20Canvas/B1C.html) 
     - Making clock with Canvas API
+<<<<<<< HEAD
   -[B1 (HTML,CSS,JS)](https://sakshamdevelops.github.io/Frontend-101/B/B1%JS/B1.html)
     - Basic Clock
   -[B2]
     -
   -[B3: To-Do List](https://sakshamdevelops.github.io/Frontend-101/B/B3/B3.html)
    - Storing user data in `local storage` of to-do list
+=======
+  - [B1:(HTML,CSS,JS)](https://sakshamdevelops.github.io/Frontend-101/B/B1%JS/B1.html)
+    - Basic Clock 
+>>>>>>> d4fc67d7a03b92bd3395c6537ebea0777241809a
