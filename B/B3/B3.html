@@ -1,0 +1,44 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="B3.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <script src="B3.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading-box" id="heading">
+          <h1> To-Do List</h1>
+        </div>
+        <div class=item-box>
+    
+          <div class="formItem" >
+            <input type="submit" value="+" onclick="addItem()"></input>
+            <input type="text" class="input-item" placeholder="New Task" autocomplete="off">
+            <!-- <div class="delete"><i class="fas fa-trash"></i></div> -->
+          </div> 
+        <div class="items-wrapper">
+          <div class="item">
+            <input type="checkbox">
+            <p>Wake Up, My Frend </p>
+            <input type="submit" value="-" onclick="removeItem"></input>
+          </div>
+        </div>
+       
+    
+        </div>
+    
+      </div>
+</body>
+<footer>
+  Copyright sakshamdevelops @ 2021
+</footer>
+</html>
