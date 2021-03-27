@@ -1,6 +1,6 @@
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
-const radius = 200;
+
 
 function drawCircle(){
  ctx.clearRect(0,0,canvas.height,canvas.height)
@@ -10,14 +10,16 @@ ctx.strokeStyle = '#fff';
 ctx.stroke();
 ctx.closePath();
 
+//Getting Angles
+
 let today = new Date();
 let secondsAngle = today.getSeconds() * 6;
 let minutesAngle = today.getMinutes() * 6 + secondsAngle/60;
 let hours = today.getHours()<=12 ? today.getHours() : today.getHours()-12 ;
 let hoursAngle = secondsAngle/3600 + hours*6 + (today.getMinutes()/2) ; 
-console.log(hoursAngle);
 
 
+//SECOND, MINUTE AND HOUR HAND
 ctx.beginPath();
 drawHands(280,secondsAngle);
 drawHands(220,minutesAngle);
@@ -25,10 +27,7 @@ drawHands(150,hoursAngle);
 ctx.stroke();
 ctx.closePath();
 
-
 }
-
-drawCircle()
 
 function drawHands(length, angle){
     ctx.save();
@@ -39,6 +38,8 @@ function drawHands(length, angle){
     ctx.lineTo(x, y);
     ctx.restore();
 }
+
+
 
 setInterval(drawCircle,1000);
 
