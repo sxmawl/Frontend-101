@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(246, 240, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0 auto 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    color: rgb(0, 0, 0,0.2);
+}
+
+canvas{
+    background-color: rgb(77, 77, 77);
+    border: 2px dashed rgb(139, 139, 139);
+    border-radius: 50%;
+    box-shadow:
+    0 2px 9.6px rgba(0, 0, 0, 0.15),
+    0 5.5px 26.7px rgba(0, 0, 0, 0.215),
+    0 13.3px 64.2px rgba(0, 0, 0, 0.28),
+    0 44px 213px rgba(0, 0, 0, 0.43);
+  
+
+}
