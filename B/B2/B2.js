@@ -6,7 +6,7 @@ function handleClick(index){
 
 
     if(shiftState){
-        latestCheckedIndex = index;
+      latestCheckedIndex = index;
       checkRemaining()
     }else{
        prevCheckedIndex = index;
@@ -57,7 +57,3 @@ document.addEventListener("keyup",(event)=>{
 
 //     })   
 // }
-
-function handleRisk(){
-    alert("You've been rick-rolled!");
-}
