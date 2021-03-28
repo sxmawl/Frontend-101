@@ -14,8 +14,8 @@
   - [B1:(Canvas API)](https://sakshamdevelops.github.io/Frontend-101/B/B1%20Canvas/B1C.html) 
     - Making clock with Canvas API
   - [B1: (HTML,CSS,JS)](https://sakshamdevelops.github.io/Frontend-101/B/B1%JS/B1.html)
-    - Basic Clock
-  - [B2]
-    - File management system
+    - Clean Cool Clock
+  - [B2: Multiple Select ](https://sakshamdevelops.github.io/Frontend-101/B/B2/B2.html)
+    - Cloning selection mechanism of Mac/Windows file management system
   - [B3: To-Do List](https://sakshamdevelops.github.io/Frontend-101/B/B3/B3.html)
     - Storing user data in `local storage` of to-do list
