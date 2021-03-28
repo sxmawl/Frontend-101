@@ -32,14 +32,15 @@ body{
 }
 
 .btn-frontFace{
-    transform: rotateY(-30deg);
+    transform: rotateY(-21deg);
+    transform-origin: left;
     width: 150px;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .btn-rightFace{
-    transform: translateX(-36px) rotateY(60deg)
+    transform: translateX(-36px) rotateY(60deg) scale(1,1.03)
 }
 
 .btn-frontFace:hover{
