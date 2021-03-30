@@ -10,40 +10,40 @@ svg{
 
 .outline-0{
  stroke: #ffffff;
- stroke-width: 1.2px;
+ stroke-width: 2px;
  animation: draw-outline 1.5s linear 0s 1 normal forwards;
 }
 
 .outline-1{
     stroke: #ff2077;
-    stroke-width: 1.2px;
+    stroke-width: 2px;
     animation: draw-outline 1.2s linear 0.8s 1 normal forwards;
 
 }
 
 .outline-2{
     stroke: #ffffff;
-    stroke-width: 1.2px;
+    stroke-width: 2px;
     animation: draw-outline 0.9s linear 1.4s 1 normal forwards;
 }
 
 .fill-0{
 
-    animation: fill-white 0.6s linear 1.5s 1 normal forwards;
+    animation: fill-white 0.3s linear 1.5s 1 normal forwards;
 
 }
 
 
 .fill-1{
 
-    animation: fill-pink 0.6s linear 2.2s 1 normal forwards;
+    animation: fill-pink 0.3s linear 2.2s 1 normal forwards;
     
 }
 
 
 .fill-2{
 
-    animation: fill-white 0.6s linear 2.5s 1 normal forwards;   
+    animation: fill-white 0.3s linear 2.5s 1 normal forwards;   
 
 }
 
