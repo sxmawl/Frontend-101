@@ -14,9 +14,14 @@ console.log(minutes);
 
 secondsHand.style.transform = 'rotate(' + seconds*6 +'deg)';
   if(seconds==0){
-    secondsHand.style.transition = 'top 1s ease-in-out'
- }else{
-    secondsHand.style.transition = 'all 1s linear'
+    seconds = 60;
+    secondsHand.style.transition = 'all 1s linear';
+
+ }else if(seconds == 1){
+   //  secondsHand.style.transition = 'all 1s linear'
+ }
+ else{
+   secondsHand.style.transition = 'all 1s linear'
  }
     
  minutesHand.style.transform = 'rotate(' + (minutes + seconds/60)*6 +'deg)';
