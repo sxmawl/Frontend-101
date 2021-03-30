@@ -10,19 +10,11 @@ let seconds = today.getSeconds();
 let hours = today.getHours()<=12 ? today.getHours() : today.getHours()-12 ;
 let minutes = today.getMinutes();
 
-console.log(minutes);
 
 secondsHand.style.transform = 'rotate(' + seconds*6 +'deg)';
-  if(seconds==0){
-    seconds = 60;
-    secondsHand.style.transition = 'all 1s linear';
+  
+ console.log(secondsHand.style.transform);
 
- }else if(seconds == 1){
-   //  secondsHand.style.transition = 'all 1s linear'
- }
- else{
-   secondsHand.style.transition = 'all 1s linear'
- }
     
  minutesHand.style.transform = 'rotate(' + (minutes + seconds/60)*6 +'deg)';
 

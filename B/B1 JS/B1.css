@@ -47,7 +47,6 @@ body{
     left: 48.85%;
     top: 6.25%;
     transform-origin: bottom;
-    transition: all 1s linear;
 }
 
 .minutes{
