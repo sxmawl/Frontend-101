@@ -29,6 +29,11 @@ window.onload = () =>{
 
 
 function addItem(){
+    
+    if(document.querySelector('.input-item').value.trim() == ""){
+        return;
+    }
+
 
     items.push(document.querySelector('.input-item').value);
     console.log(items);
