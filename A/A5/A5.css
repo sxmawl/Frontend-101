@@ -9,7 +9,7 @@ svg{
 }
 .outline-0{
  stroke: #ffffff;
- stroke-width: 4px;
+ stroke-width: 1.2px;
  animation: draw-outline 1.5s ease-in-out 0s 1 normal forwards;
 }
 .fill-0{
@@ -20,7 +20,7 @@ svg{
 
 .outline-1{
     stroke: #ff2077;
-    stroke-width: 4px;
+    stroke-width: 1.2px;
     animation: draw-outline 0.8s ease-in-out 0.5s 1 normal forwards;
 
 }
@@ -32,7 +32,7 @@ svg{
 
 .outline-2{
     stroke: #ffffff;
-    stroke-width: 4px;
+    stroke-width: 1.2px;
     animation: draw-outline 0.6s ease-in-out 0.8s 1 normal forwards;
 }
 .fill-2{
