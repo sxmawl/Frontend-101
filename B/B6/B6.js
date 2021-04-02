@@ -26,10 +26,10 @@ function renderUser(username){
     document.querySelector('body').innerHTML=`
     <img class="bg_image" src="images/wall.jpeg" alt="">
     <div class="float1" style="opacity:1">
-     <a href=""><img src="images/git1.png"></a>
+     <a href="https://github.com/SakshamDevelops/Frontend-101"><img src="images/git1.png"></a>
       </div>
       <div class="float2" style="opacity:1">
-     <img src="images/git2.png" alt="">
+      <a href="https://github.com/SakshamDevelops/Frontend-101"><img src="images/git2.png" alt=""></a>
       </div>
      <div class="profile_card" style="opacity:1">
       <div class="photo_card">

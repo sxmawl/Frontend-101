@@ -19,3 +19,7 @@
     - Cloning selection mechanism of Mac/Windows file management system
   - [B3: To-Do List](https://sakshamdevelops.github.io/Frontend-101/B/B3/B3.html)
     - Storing user data in `local storage` of to-do list
+  - [B4: Follow Along Cards](https://sakshamdevelops.github.io/Frontend-101/B/B4/B4.html)
+    - Smooth navigation along navbar
+  - [B6: Github Profile Fetcher](https://sakshamdevelops.github.io/Frontend-101/B/B6/B6.html)
+    - Just put your GH username and KABOOM!

@@ -136,7 +136,7 @@ p{
     animation: float_git1 2s ease-in-out 1s infinite alternate forwards;
 }
 
-.float1 > img{
+a > img{
     width: 50%;
 }
 
@@ -148,10 +148,6 @@ p{
     animation: float_git2 2s ease-in-out 1s infinite alternate forwards;
 }
 
-
-.float2 > img{
-    width: 50%;
-}
 
 h1{
     font-size: 2.5rem;
