@@ -1,0 +1,40 @@
+
+body{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid{
+    width: 40vw;
+    height: 40vw;
+    background-color: rgba(150, 90, 0, 0.81);
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    grid-template-rows: 10vw 10vw 10vw 10vw;
+    padding: 1.5%;
+    border-radius: 10px;
+}
+
+.cell{
+    background-color: #ffb09385;
+    float: left;
+    margin: 3%;
+}
+
+
+.dynamicNumber {
+    position: absolute;
+    width: 9.35vw;
+    height: 9.35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: linen;
+    background-color: rgba(248, 63, 63, 0.66);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
