@@ -1,4 +1,64 @@
 
+function cellColor(){
+
+    let numberArray = document.querySelectorAll(".dynamicNumber");
+
+    for (let i = 0; i < numberArray.length ; i++) {
+        
+        switch (numberArray[i].dataset.value) {
+        
+        case "2":
+            numberArray[i].style.backgroundColor = "#eee3d6"
+                break;
+
+        case "4":
+            numberArray[i].style.backgroundColor = "#ede0c8" 
+                break;
+
+        case "8":
+            numberArray[i].style.backgroundColor = "#f2b179" 
+                break;
+
+        case "16":
+            numberArray[i].style.backgroundColor = "#f59563"
+                break;
+
+        case "32":
+            numberArray[i].style.backgroundColor = "#f67e5f"
+                break;
+
+        case "64":
+            numberArray[i].style.backgroundColor = "#f65e3b"
+                break;
+
+        case "128":
+            numberArray[i].style.backgroundColor = "#f1d96b"
+                break;
+
+        case "256":
+            numberArray[i].style.backgroundColor = "#f2cf4d"
+                break;
+
+        case "512":
+            numberArray[i].style.backgroundColor = "#e5c12b"
+                break;
+
+        case "1024":
+            numberArray[i].style.backgroundColor = "#dfba12"
+                break;
+
+        case "2048":
+            numberArray[i].style.backgroundColor = "#edc501"
+                break;        
+        
+            default:
+                break;
+        }
+        
+    }
+
+
+}
 //////////////////////////////////// Dealing With Cells ////////////////////////////////
 
 
@@ -225,11 +285,12 @@ function checkMerge(direction){
 
         if(renderArbitaryNumber()){
             gameState =true;
+            cellColor();
         }else{
             alert("Game Over")
         }
 
-    },500)
+    },100)
 
 
 
@@ -253,14 +314,8 @@ function slide(direction){
 
 }
 
-
-
-
-
-
 drawGrid()
 renderArbitaryNumber()
-
 
 
 
