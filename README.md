@@ -23,3 +23,5 @@
     - Smooth navigation along navbar
   - [B6: Github Profile Fetcher](https://sakshamdevelops.github.io/Frontend-101/B/B6/B6.html)
     - Just put your GH username and KABOOM!
+  - [B7: Game Time - 2048](https://sakshamdevelops.github.io/Frontend-101/B/B7/B7.html)
+    - Game Time Gonna Give You A Hard Time Baeby 🍼
