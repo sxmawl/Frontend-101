@@ -10,7 +10,7 @@ let gridBox = document.querySelector(".grid");
 function drawGrid(){
  
     const cellElements = document.querySelectorAll(".cell");
-    let cellPosition = 0;
+    let cellPosition = 1;
 
     for(let cellItem of cellElements){
 
@@ -35,15 +35,19 @@ function arbitaryEmptyCellPosition(){
 
     let emptyCellArr = [];
 
-    for (let i = 0; i < cellArr.length; i++) {
+    for (let i = 1; i < cellArr.length; i++) {
 
         if( cellArr[i].number == null ) emptyCellArr.push(i);
 
     }
 
-    if( emptyCellArr.length == 0 ) return false;
-
-    return emptyCellArr[ Math.floor( Math.random() * cellArr.length) ]
+    if( emptyCellArr.length == 0 ) {return false};
+     
+    console.log("Arbit Empty");
+    console.log(Math.floor( Math.random() * (cellArr.length - 1) ));
+    console.log("Empty Arr");
+    console.log(emptyCellArr);
+    return emptyCellArr[ Math.floor( Math.random() * (emptyCellArr.length - 1) )]
 
 }
 
@@ -82,18 +86,57 @@ function renderArbitaryNumber(){
     newNumberDiv.classList.add("dynamicNumber");
     
 
+    console.log("Empty " + emptyCellPosition);
+
     newNumberDiv.style.top = `${cellArr[emptyCellPosition].top}px`
     newNumberDiv.style.left = `${cellArr[emptyCellPosition].left}px`
-
-    cellArr[emptyCellPosition].number = num;
+    
+    cellArr[emptyCellPosition].number = newNumberDiv;
     gridBox.append(newNumberDiv);
 
-    console.log(emptyCellPosition);
+    
 
     return true;
 }
 
+//////////////////////////////////// Moving Cells After Checking Cells /////////////////////////
 
+function moveToCell(from, to){
+   
+
+    const number = from.number;
+    // console.log(number);
+
+    if(to.number == null){
+
+        number.style.top = ` ${to.element.offsetTop}px `;
+        number.style.left = ` ${to.element.offsetLeft}px `;
+        
+        from.number = null;
+        to.number = number;
+
+    }
+
+    else if ( number.dataset.value == to.number.dataset.value ){
+
+        number.style.top = `${to.offsetTop}px`;
+        number.style.left = `${to.offsetLeft}px`;
+        number.style.opacity = `0`;
+
+        setTimeout(function(){
+            gridBox.removeChild(number)
+        }, 500)
+
+         to.number.dataset.value *= 2 ;
+         to.number.innerText = to.number.dataset.value;   
+
+         from.number = null;
+   
+    }else{
+        console.log("F ho gya")
+    }
+
+}
 
 
 
@@ -113,10 +156,10 @@ function checkMerge(direction){
     }
 
     const roots = directionEndpoints[direction]
-    
-    let indicator = (direction == 'RIGHT' || direction == 'DOWN') ? -1 : 1
 
-    indicator = (direction == 'UP' || direction == 'DOWN') ? 4 : 1
+    let indicator = (direction == 'RIGHT' || direction == 'DOWN') ? -1 : 1
+    
+    indicator *= (direction == 'UP' || direction == 'DOWN') ? 4 : 1
 
     for (let i = 0; i < roots.length ; i++) {
         
@@ -130,35 +173,45 @@ function checkMerge(direction){
 
         for (let j = 1; j < 4; j++) {
             
-            const destinationCellIndex = roots + (j * indicator)
-            const destinationCell = cellArr[destinationCellIndex];
-
+            const startCellIndex = root + (j * indicator);
+            const startCell = cellArr[startCellIndex];
+             
             //Checking all the cells in one row/column from 
             // jth to root cell iteratively
 
-            if (destinationCell.number != null){
-                let moveToCell = null;
+            if (startCell.number != null){
+
+                let dynamicCell = null;
 
                 for (let k = j-1; k >= 0 ; k--) {
 
                     
                     const priorCellIndex = root + (k * indicator) 
+                    
                     const priorCell = cellArr[priorCellIndex]
-                     
+    
                     if (priorCell.number == null){
 
                         // In the user-specified direction, cell is empty go on... 
-                        moveToCell = priorCell; 
-
-                    }else if(priorCell.dataset.value == destinationCell.dataset.value){
+                        dynamicCell = priorCell; 
+                        
+                    }
+                    else if(priorCell.number.dataset.value == startCell.number.dataset.value){
 
                         // We need to merge these two now 
+                        dynamicCell = priorCell;
+                        break;
 
-                    }else{
+                    }
+                    else{
                         // Cells are different but adjacent so no prob 2 guys chillin
+                        break;
                     }
 
-
+                }
+                
+                if(dynamicCell != null){
+                    moveToCell ( startCell ,dynamicCell );
                 }
 
             }
@@ -167,6 +220,19 @@ function checkMerge(direction){
 
         
     }
+
+    setTimeout(()=>{
+
+        if(renderArbitaryNumber()){
+            gameState =true;
+        }else{
+            alert("Game Over")
+        }
+
+    },500)
+
+
+
 
 }
 
@@ -192,38 +258,8 @@ function slide(direction){
 
 
 
-
-
-
 drawGrid()
 renderArbitaryNumber()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

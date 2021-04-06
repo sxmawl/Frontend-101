@@ -37,7 +37,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in;
-    font-size: 5rem;
+    font-size: 3rem;
     color: rgb(231, 223, 214);
     background-color: rgba(248, 63, 63, 0.66);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
