@@ -21,8 +21,10 @@ body{
 
 .cell{
     background-color: #ffb09385;
+    opacity: 0.5;
     float: left;
     margin: 3%;
+    border-radius: 5px;
 }
 
 
@@ -30,11 +32,13 @@ body{
     position: absolute;
     width: 9.35vw;
     height: 9.35vw;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
-    color: linen;
+    transition: all 0.2s ease-in;
+    font-size: 5rem;
+    color: rgb(231, 223, 214);
     background-color: rgba(248, 63, 63, 0.66);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
