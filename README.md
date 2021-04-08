@@ -21,6 +21,8 @@
     - Storing user data in `local storage` of to-do list
   - [B4: Follow Along Cards](https://sakshamdevelops.github.io/Frontend-101/B/B4/B4.html)
     - Smooth navigation along navbar
+  - [B5 – Create a basic chrome extension](https://github.com/chirag-wadhwa/frontend-101/tree/master/B/Chrome%20Extension)
+    - Simple Chrome extension which console logs a message when you visit one of these [OASIS](https://bits-oasis.org/), [BOSM](https://www.bits-bosm.org/),
   - [B6: Github Profile Fetcher](https://sakshamdevelops.github.io/Frontend-101/B/B6/B6.html)
     - Just put your GH username and KABOOM!
   - [B7: Game Time - 2048](https://sakshamdevelops.github.io/Frontend-101/B/B7/B7.html)
