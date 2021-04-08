@@ -1,4 +1,5 @@
 body{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +7,10 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-image: url("images/wall.jpg");
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .bg_image{
@@ -17,10 +22,48 @@ body{
     height: 100vh;
     filter: blur(1.5px);
 }
-.search_bar{
-    width: 40vw;
-    height: 10vh;  
+
+
+.wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.search_bar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.gh_form{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    position: relative;
+}
+
+.gh_submit{
+    position: absolute;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    right: 0;
+    height: 100%;
+}
+
+.gh_username{
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    padding-left: 10%;
+}
+
 input{
     height: 50px;
     width: 100%;
@@ -45,8 +88,6 @@ input{
 input:focus{
     outline: none;
 }
-
-
 
 
 
@@ -131,19 +172,19 @@ p{
 
 
 .float1{
-    right: -15%;
+    right: 3%;
     top: 5%;
     animation: float_git1 2s ease-in-out 1s infinite alternate forwards;
 }
 
 a > img{
-    width: 50%;
+    width: 20vw
 }
 
 
 .float2{
-    left:-1%;
-    bottom: 25%;
+    left:3%;
+    bottom: 20%;
     transform: rotate(-50deg);
     animation: float_git2 2s ease-in-out 1s infinite alternate forwards;
 }
@@ -172,4 +213,32 @@ h1{
     to{
         transform: translateY(0px) rotate(-55deg);
     }
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+    .float1{
+        right: 3%;
+        top: 5%;
+        animation: float_git1 2s ease-in-out 1s infinite alternate forwards;
+    }
+    .float2{
+        left:3%;
+        bottom: 20%;
+        transform: rotate(-50deg);
+        animation: float_git2 2s ease-in-out 1s infinite alternate forwards;
+    }
+
+    .gh_username{
+        padding-left: 5%;
+        font-size: 1.3rem;
+    }
+    .gh_submit{
+        font-size: 1.3rem;
+    }
+
+
+
 }

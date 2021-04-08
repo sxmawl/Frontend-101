@@ -288,6 +288,7 @@ function checkMerge(direction){
             cellColor();
         }else{
             alert("Game Over")
+            gameState=true;
         }
 
     },100)

@@ -8,6 +8,26 @@ body{
     overflow: hidden;
 }
 
+.wrapper{
+    background-color: linen ;
+    padding: 2% 0% 2% 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 15vw;
+}
+
+.container{
+    margin-right: 5%;
+}
+
 .grid{
     width: 40vw;
     height: 40vw;

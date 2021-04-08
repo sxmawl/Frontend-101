@@ -22,6 +22,7 @@ function handleHover(){
 
     document.querySelector('.dynamicBackground').style.width = dimensions.width;
     document.querySelector('.dynamicBackground').style.height = dimensions.height;
+    document.querySelector('.dynamicBackground').style.display = "flex";
     document.querySelector('.dynamicBackground').style.transform = `translate(${dimensions.x_Cord}px,${dimensions.y_Cord}px)`
 }
 
