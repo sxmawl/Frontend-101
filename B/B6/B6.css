@@ -10,6 +10,7 @@ body{
     background-image: url("images/wall.jpg");
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     
 }
 
@@ -55,6 +56,9 @@ body{
     padding: 0;
     right: 0;
     height: 100%;
+    background-color: #791e23;
+    color: #f2f2f2;
+    font-size: 1.5rem;
 }
 
 .gh_username{
@@ -62,6 +66,7 @@ body{
     height: 20%;
     text-align: left;
     padding-left: 10%;
+    font-size: 1.5rem;
 }
 
 input{
@@ -221,12 +226,12 @@ h1{
 
     .float1{
         right: 3%;
-        top: 5%;
+        top: 35%;
         animation: float_git1 2s ease-in-out 1s infinite alternate forwards;
     }
     .float2{
         left:3%;
-        bottom: 20%;
+        bottom: 40%;
         transform: rotate(-50deg);
         animation: float_git2 2s ease-in-out 1s infinite alternate forwards;
     }
