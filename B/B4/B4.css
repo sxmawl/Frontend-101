@@ -51,7 +51,7 @@ img{
     top: 150%;
     align-items: center;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s step-start;
 
 
 }
@@ -73,7 +73,7 @@ p{
     display: none;
     justify-content: center;
     border-radius: 15px;
-    transition: transform 0.2s ease-in-out, opacity 0.1s;
+    transition: all 0.1s ease-in;
 }
 
 .arrow{
