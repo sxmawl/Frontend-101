@@ -66,7 +66,6 @@ let gameState = true;
 let cellArr =[]
 let gridBox = document.querySelector(".grid");
 
-
 function drawGrid(){
  
     const cellElements = document.querySelectorAll(".cell");
@@ -103,10 +102,7 @@ function arbitaryEmptyCellPosition(){
 
     if( emptyCellArr.length == 0 ) {return false};
      
-    console.log("Arbit Empty");
-    console.log(Math.floor( Math.random() * (cellArr.length - 1) ));
-    console.log("Empty Arr");
-    console.log(emptyCellArr);
+    
     return emptyCellArr[ Math.floor( Math.random() * (emptyCellArr.length - 1) )]
 
 }
@@ -146,7 +142,6 @@ function renderArbitaryNumber(){
     newNumberDiv.classList.add("dynamicNumber");
     
 
-    console.log("Empty " + emptyCellPosition);
 
     newNumberDiv.style.top = `${cellArr[emptyCellPosition].top}px`
     newNumberDiv.style.left = `${cellArr[emptyCellPosition].left}px`
@@ -165,7 +160,6 @@ function moveToCell(from, to){
    
 
     const number = from.number;
-    // console.log(number);
 
     if(to.number == null){
 
@@ -192,13 +186,26 @@ function moveToCell(from, to){
 
          from.number = null;
    
-    }else{
-        console.log("F ho gya")
     }
+    updateScore();
 
 }
 
-
+function updateScore(){
+    let total = 0;
+    document.querySelectorAll(".dynamicNumber").forEach(function(num){
+        if(num.dataset.value !== "2"){
+            total += parseInt(num.dataset.value);
+        }else if(document.querySelector("#score").innerHTML == "2048"){
+           document.querySelector("body").innerHTML = `
+           <div class="winContainer">
+           <h1 class="winHeading">You Won!</h1>
+           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FVuw9m5wXviFIQ%2Fgiphy.gif&f=1&nofb=1">
+           </div>`
+        }
+        })
+    document.querySelector("#score").innerHTML = `${total}`
+}
 
 
 //////////////////////////// Checking if cells in one row/column Merge //////////////////////////
@@ -357,3 +364,8 @@ document.addEventListener("keydown", (event) => {
     }
     
 })
+
+
+function handleRestart(){
+    window.location.reload()
+}

@@ -22,15 +22,14 @@ function handleHover(){
 
     document.querySelector('.dynamicBackground').style.width = dimensions.width;
     document.querySelector('.dynamicBackground').style.height = dimensions.height;
-    document.querySelector('.dynamicBackground').style.display = "flex";
+    document.querySelector('.dynamicBackground').style.opacity = "1";
     document.querySelector('.dynamicBackground').style.transform = `translate(${dimensions.x_Cord}px,${dimensions.y_Cord}px)`
 }
 
 function handleEmpty(){
 
     this.classList.remove("active");
-    document.querySelector('.dynamicBackground').style.width = "0px";
-    document.querySelector('.dynamicBackground').style.height = "0px";
+    document.querySelector('.dynamicBackground').style.opacity = "0";
 
 }
 
