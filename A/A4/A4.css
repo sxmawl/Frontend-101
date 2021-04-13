@@ -93,11 +93,14 @@ overflow-y: hidden;
     z-index: 2;
 }
 
-/* .corner{
-  position:absolute;
-  margin:-20px;
-  width:40px;
-  height:40px;
-  border-radius: 50%; /* NEW */
-  /* box-shadow: 0 0 0 250px #9110b1;
-} */ 
+.iphone::after{
+  content: '';
+  height: 40px;
+  width: 5px;
+  background-color: rgb(77, 77, 77);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: -8px;
+}
