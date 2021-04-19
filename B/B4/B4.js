@@ -16,14 +16,29 @@ function handleHover(){
         y_Cord: (document.querySelector('.dynamicContent').getBoundingClientRect().top -5)
 
     }
+ 
+    const dynamicBackground =  document.querySelector('.dynamicBackground');
+    dynamicBackground.style.width = dimensions.width;
+    dynamicBackground.style.height = dimensions.height;
+    dynamicBackground.style.opacity = "1";
+    dynamicBackground.style.transform = `translate(${dimensions.x_Cord}px,${dimensions.y_Cord}px)`
+   
+    dynamicBackground.addEventListener('mouseenter', ()=>{
+        dynamicBackground.style.opacity = 1
+    })
+    // dynamicBackground.addEventListener('mouseleave', ()=>{
+    //     dynamicBackground.style.opacity = 0
+    // })
 
-    console.log(dimensions.x_Cord);
-    console.log(dimensions.y_Cord);
+    const dynamicContent = this.nextElementSibling;
+    dynamicContent.addEventListener('mouseenter', ()=>{
+        dynamicContent.style.opacity = 1
+    })
+    dynamicContent.addEventListener('mouseleave', ()=>{
+        dynamicContent.style.opacity = 0
+    })
 
-    document.querySelector('.dynamicBackground').style.width = dimensions.width;
-    document.querySelector('.dynamicBackground').style.height = dimensions.height;
-    document.querySelector('.dynamicBackground').style.opacity = "1";
-    document.querySelector('.dynamicBackground').style.transform = `translate(${dimensions.x_Cord}px,${dimensions.y_Cord}px)`
+
 }
 
 function handleEmpty(){
